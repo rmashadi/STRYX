@@ -156,8 +156,6 @@ class Auth extends CI_Controller
         $this->form_validation->set_rules('username', 'NIP/Username', 'trim|required|is_unique[user.username]');
         $this->form_validation->set_rules('name', 'Full Name', 'trim|required');
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|is_unique[user.email]');
-        $this->form_validation->set_rules('no_hp', 'No Whatapp', 'trim|required');
-        $this->form_validation->set_rules('instansi', 'Instansi', 'trim|required');
         $this->form_validation->set_rules('_challenge', 'Security challenge', 'callback_verify_challenge');
         $this->form_validation->set_rules('password1', 'Password', 'trim|required|min_length[8]|callback_valid_password');
         $this->form_validation->set_rules('password2', 'Confirm Password', 'trim|required|matches[password1]');
@@ -169,23 +167,15 @@ class Auth extends CI_Controller
         } else {
             $this->db->delete('register_attempts', ['ip_address' => $ip_address]);
 
-            $instansi = htmlspecialchars($this->input->post('instansi', true));
-            $existing_instansi = $this->db->get_where('tb_instansi', ['instansi' => $instansi])->row_array();
-            if (!$existing_instansi) {
-                $this->db->insert('tb_instansi', ['instansi' => $instansi]);
-            }
-
             $data = [
                 'username'      => htmlspecialchars($this->input->post('username', true)),
                 'name'          => htmlspecialchars($this->input->post('name', true)),
                 'email'         => htmlspecialchars($this->input->post('email', true)),
-                'no_hp'         => htmlspecialchars($this->input->post('no_hp', true)),
-                'instansi'      => $instansi,
                 'password'      => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
                 'image'         => 'default.jpg',
                 'role_id'       => 14,
                 'is_active'     => 0,
-                'date_created'  => date('d/m/Y H:i:s A')
+                'date_created'  => date('Y-m-d H:i:s')
             ];
 
             $this->db->insert('register', $data);
@@ -209,15 +199,6 @@ class Auth extends CI_Controller
             return false;
         }
         return true;
-    }
-
-    public function get_instansi()
-    {
-        $keyword = $this->input->post('keyword', true);
-        $this->db->like('instansi', $keyword);
-        $this->db->limit(10);
-        $result = $this->db->get('tb_instansi')->result_array();
-        echo json_encode($result);
     }
 
     // ── Logout ───────────────────────────────────────────────

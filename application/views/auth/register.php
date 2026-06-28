@@ -33,7 +33,7 @@
   <div>
     <div class="terminal-card" style="max-width: 440px; margin: 0 auto 16px;">
       <div class="terminal-body" style="text-align: center; padding-bottom: 6px;">
-        <span style="color: #00d4ff;">root@mantra</span>:<span style="color: #e2e8f0;">~</span>$ <span style="color: #94a3b8;">auth --register</span>
+        <span style="color: #00d4ff;">root@stryx</span>:<span style="color: #e2e8f0;">~</span>$ <span style="color: #94a3b8;">auth --register</span>
       </div>
     </div>
     <h2><b>Form Registrasi</b></h2>
@@ -51,7 +51,7 @@
       <?php echo validation_errors('<strong><div class="alert alert-danger shadow" role="alert">', '</div></strong>'); ?>
 
       <div class="form-group">
-        <input type="text" class="form-control shadow" name="username" id="username" placeholder="NIP" value="<?= set_value('username'); ?>">
+        <input type="text" class="form-control shadow" name="username" id="username" placeholder="Username" value="<?= set_value('username'); ?>">
       </div>
 
       <div class="form-group">
@@ -60,14 +60,6 @@
 
       <div class="form-group">
         <input type="email" class="form-control shadow" name="email" id="email" placeholder="Email" value="<?= set_value('email'); ?>">
-      </div>
-
-      <div class="form-group">
-        <input type="number" class="form-control shadow" name="no_hp" id="no_hp" placeholder="No Whatapp" value="<?= set_value('no_hp'); ?>">
-      </div>
-      <div class="form-group">
-          <input list="instansiList" id="instansi" name="instansi" class="form-control shadow" placeholder="Instansi" autocomplete="off" value="<?= set_value('instansi'); ?>">
-          <datalist id="instansiList"></datalist>
       </div>
 
       <div class="form-group position-relative">
@@ -184,32 +176,5 @@
         this.classList.toggle('fa-eye-slash');
     });
 
-    $(document).ready(function() {
-        $('#instansi').on('input', function() {
-            var keyword = $(this).val();
-
-            if (keyword.length >= 3) {
-                $.ajax({
-                    url: '<?= base_url('auth/get_instansi'); ?>',
-                    method: 'POST',
-                    data: { keyword: keyword },
-                    success: function(response) {
-                        var data = JSON.parse(response);
-                        var options = '';
-
-                        if (data.length > 0) {
-                            data.forEach(function(item) {
-                                options += '<option value="' + item.instansi + '"></option>';
-                            });
-                        } else {
-                            options = '<option value="Tidak ditemukan. Ketik manual..."></option>';
-                        }
-
-                        $('#instansiList').html(options);
-                    }
-                });
-            }
-        });
-    });
 </script>
 

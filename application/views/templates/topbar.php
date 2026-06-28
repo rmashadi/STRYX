@@ -4,7 +4,7 @@
             <div class="navbar-header">
                 <a class="navbar-minimalize minimalize-styl-2 btn btn-outline" href="#"><i class="fa fa-bars"></i> </a>
                 <h3 style="display: inline-block; margin: 0; line-height: 58px; padding-left: 15px; vertical-align: middle;">
-                    <span class="font-mono text-cyan">MANTRA</span> <small class="text-muted d-none d-md-inline">Security Assessment</small>
+                    <span class="font-mono text-cyan">STRYX</span> <small class="text-muted d-none d-md-inline">Security Assessment</small>
                 </h3>
             </div>
 

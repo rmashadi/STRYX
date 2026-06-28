@@ -3301,3 +3301,153 @@ DEBUG - 2026-06-28 13:02:02 --> Global POST, GET and COOKIE data sanitized
 INFO - 2026-06-28 13:02:02 --> Input Class Initialized
 INFO - 2026-06-28 13:02:02 --> Language Class Initialized
 ERROR - 2026-06-28 13:02:02 --> 404 Page Not Found: Assets/vendor
+INFO - 2026-06-28 13:03:04 --> Config Class Initialized
+INFO - 2026-06-28 13:03:04 --> Hooks Class Initialized
+DEBUG - 2026-06-28 13:03:04 --> UTF-8 Support Enabled
+INFO - 2026-06-28 13:03:04 --> Utf8 Class Initialized
+INFO - 2026-06-28 13:03:04 --> URI Class Initialized
+INFO - 2026-06-28 13:03:04 --> Router Class Initialized
+INFO - 2026-06-28 13:03:04 --> Output Class Initialized
+INFO - 2026-06-28 13:03:04 --> Security Class Initialized
+DEBUG - 2026-06-28 13:03:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2026-06-28 13:03:04 --> Input Class Initialized
+INFO - 2026-06-28 13:03:04 --> Language Class Initialized
+ERROR - 2026-06-28 13:03:04 --> 404 Page Not Found: Auth/login
+INFO - 2026-06-28 13:03:08 --> Config Class Initialized
+INFO - 2026-06-28 13:03:08 --> Hooks Class Initialized
+DEBUG - 2026-06-28 13:03:08 --> UTF-8 Support Enabled
+INFO - 2026-06-28 13:03:08 --> Utf8 Class Initialized
+INFO - 2026-06-28 13:03:08 --> URI Class Initialized
+INFO - 2026-06-28 13:03:08 --> Router Class Initialized
+INFO - 2026-06-28 13:03:08 --> Output Class Initialized
+INFO - 2026-06-28 13:03:08 --> Security Class Initialized
+DEBUG - 2026-06-28 13:03:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2026-06-28 13:03:08 --> Input Class Initialized
+INFO - 2026-06-28 13:03:08 --> Language Class Initialized
+INFO - 2026-06-28 13:03:08 --> Loader Class Initialized
+INFO - 2026-06-28 13:03:08 --> Helper loaded: url_helper
+INFO - 2026-06-28 13:03:08 --> Helper loaded: file_helper
+INFO - 2026-06-28 13:03:08 --> Helper loaded: security_helper
+INFO - 2026-06-28 13:03:08 --> Helper loaded: check_login_helper
+INFO - 2026-06-28 13:03:08 --> Helper loaded: filter_helper
+INFO - 2026-06-28 13:03:08 --> Database Driver Class Initialized
+INFO - 2026-06-28 13:03:08 --> Database Driver Class Initialized
+INFO - 2026-06-28 13:03:08 --> Email Class Initialized
+DEBUG - 2026-06-28 13:03:08 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+ERROR - 2026-06-28 13:03:08 --> Severity: Warning --> mkdir(): Invalid path /home/darahbiru/Projects/MANTRA-Persandian/system/libraries/Session/drivers/Session_files_driver.php 136
+ERROR - 2026-06-28 13:03:08 --> Session: Configured save path '' is not a directory, doesn't exist or cannot be created.
+ERROR - 2026-06-28 13:03:08 --> Severity: Warning --> session_start(): Failed to initialize storage module: user (path: ) /home/darahbiru/Projects/MANTRA-Persandian/system/libraries/Session/Session.php 143
+INFO - 2026-06-28 13:03:08 --> Session: Class initialized using 'files' driver.
+INFO - 2026-06-28 13:03:08 --> Helper loaded: form_helper
+INFO - 2026-06-28 13:03:08 --> Form Validation Class Initialized
+INFO - 2026-06-28 13:03:08 --> Controller Class Initialized
+ERROR - 2026-06-28 13:03:08 --> Severity: Warning --> Undefined variable $title /home/darahbiru/Projects/MANTRA-Persandian/application/views/templates/auth_header.php 8
+INFO - 2026-06-28 13:03:08 --> File loaded: /home/darahbiru/Projects/MANTRA-Persandian/application/views/templates/auth_header.php
+INFO - 2026-06-28 13:03:08 --> File loaded: /home/darahbiru/Projects/MANTRA-Persandian/application/views/auth/login.php
+INFO - 2026-06-28 13:03:08 --> File loaded: /home/darahbiru/Projects/MANTRA-Persandian/application/views/templates/auth_footer.php
+INFO - 2026-06-28 13:03:08 --> Final output sent to browser
+DEBUG - 2026-06-28 13:03:08 --> Total execution time: 0.0032
+INFO - 2026-06-28 13:03:08 --> Config Class Initialized
+INFO - 2026-06-28 13:03:08 --> Hooks Class Initialized
+DEBUG - 2026-06-28 13:03:08 --> UTF-8 Support Enabled
+INFO - 2026-06-28 13:03:08 --> Utf8 Class Initialized
+INFO - 2026-06-28 13:03:08 --> URI Class Initialized
+INFO - 2026-06-28 13:03:08 --> Router Class Initialized
+INFO - 2026-06-28 13:03:08 --> Output Class Initialized
+INFO - 2026-06-28 13:03:08 --> Security Class Initialized
+DEBUG - 2026-06-28 13:03:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2026-06-28 13:03:08 --> Input Class Initialized
+INFO - 2026-06-28 13:03:08 --> Language Class Initialized
+ERROR - 2026-06-28 13:03:08 --> 404 Page Not Found: Assets/vendor
+INFO - 2026-06-28 13:05:46 --> Config Class Initialized
+INFO - 2026-06-28 13:05:46 --> Hooks Class Initialized
+DEBUG - 2026-06-28 13:05:46 --> UTF-8 Support Enabled
+INFO - 2026-06-28 13:05:46 --> Utf8 Class Initialized
+INFO - 2026-06-28 13:05:46 --> URI Class Initialized
+INFO - 2026-06-28 13:05:46 --> Router Class Initialized
+INFO - 2026-06-28 13:05:46 --> Output Class Initialized
+INFO - 2026-06-28 13:05:46 --> Security Class Initialized
+DEBUG - 2026-06-28 13:05:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2026-06-28 13:05:46 --> Input Class Initialized
+INFO - 2026-06-28 13:05:46 --> Language Class Initialized
+INFO - 2026-06-28 13:05:46 --> Loader Class Initialized
+INFO - 2026-06-28 13:05:46 --> Helper loaded: url_helper
+INFO - 2026-06-28 13:05:46 --> Helper loaded: file_helper
+INFO - 2026-06-28 13:05:46 --> Helper loaded: security_helper
+INFO - 2026-06-28 13:05:46 --> Helper loaded: check_login_helper
+INFO - 2026-06-28 13:05:46 --> Helper loaded: filter_helper
+INFO - 2026-06-28 13:05:46 --> Database Driver Class Initialized
+INFO - 2026-06-28 13:05:46 --> Database Driver Class Initialized
+INFO - 2026-06-28 13:05:46 --> Email Class Initialized
+DEBUG - 2026-06-28 13:05:46 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+ERROR - 2026-06-28 13:05:46 --> Severity: Warning --> mkdir(): Invalid path /home/darahbiru/Projects/MANTRA-Persandian/system/libraries/Session/drivers/Session_files_driver.php 136
+ERROR - 2026-06-28 13:05:46 --> Session: Configured save path '' is not a directory, doesn't exist or cannot be created.
+ERROR - 2026-06-28 13:05:46 --> Severity: Warning --> session_start(): Failed to initialize storage module: user (path: ) /home/darahbiru/Projects/MANTRA-Persandian/system/libraries/Session/Session.php 143
+INFO - 2026-06-28 13:05:46 --> Session: Class initialized using 'files' driver.
+INFO - 2026-06-28 13:05:46 --> Helper loaded: form_helper
+INFO - 2026-06-28 13:05:46 --> Form Validation Class Initialized
+INFO - 2026-06-28 13:05:46 --> Controller Class Initialized
+ERROR - 2026-06-28 13:05:46 --> Severity: Warning --> Undefined variable $title /home/darahbiru/Projects/MANTRA-Persandian/application/views/templates/auth_header.php 8
+INFO - 2026-06-28 13:05:46 --> File loaded: /home/darahbiru/Projects/MANTRA-Persandian/application/views/templates/auth_header.php
+INFO - 2026-06-28 13:05:46 --> File loaded: /home/darahbiru/Projects/MANTRA-Persandian/application/views/auth/login.php
+INFO - 2026-06-28 13:05:46 --> File loaded: /home/darahbiru/Projects/MANTRA-Persandian/application/views/templates/auth_footer.php
+INFO - 2026-06-28 13:05:46 --> Final output sent to browser
+DEBUG - 2026-06-28 13:05:46 --> Total execution time: 0.0030
+INFO - 2026-06-28 13:05:46 --> Config Class Initialized
+INFO - 2026-06-28 13:05:46 --> Hooks Class Initialized
+DEBUG - 2026-06-28 13:05:46 --> UTF-8 Support Enabled
+INFO - 2026-06-28 13:05:46 --> Utf8 Class Initialized
+INFO - 2026-06-28 13:05:46 --> URI Class Initialized
+INFO - 2026-06-28 13:05:46 --> Router Class Initialized
+INFO - 2026-06-28 13:05:46 --> Output Class Initialized
+INFO - 2026-06-28 13:05:46 --> Security Class Initialized
+DEBUG - 2026-06-28 13:05:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2026-06-28 13:05:46 --> Input Class Initialized
+INFO - 2026-06-28 13:05:46 --> Language Class Initialized
+ERROR - 2026-06-28 13:05:46 --> 404 Page Not Found: Assets/vendor
+INFO - 2026-06-28 13:05:50 --> Config Class Initialized
+INFO - 2026-06-28 13:05:50 --> Hooks Class Initialized
+DEBUG - 2026-06-28 13:05:50 --> UTF-8 Support Enabled
+INFO - 2026-06-28 13:05:50 --> Utf8 Class Initialized
+INFO - 2026-06-28 13:05:50 --> URI Class Initialized
+INFO - 2026-06-28 13:05:50 --> Router Class Initialized
+INFO - 2026-06-28 13:05:50 --> Output Class Initialized
+INFO - 2026-06-28 13:05:50 --> Security Class Initialized
+DEBUG - 2026-06-28 13:05:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2026-06-28 13:05:50 --> Input Class Initialized
+INFO - 2026-06-28 13:05:50 --> Language Class Initialized
+INFO - 2026-06-28 13:05:50 --> Loader Class Initialized
+INFO - 2026-06-28 13:05:50 --> Helper loaded: url_helper
+INFO - 2026-06-28 13:05:50 --> Helper loaded: file_helper
+INFO - 2026-06-28 13:05:50 --> Helper loaded: security_helper
+INFO - 2026-06-28 13:05:50 --> Helper loaded: check_login_helper
+INFO - 2026-06-28 13:05:50 --> Helper loaded: filter_helper
+INFO - 2026-06-28 13:05:50 --> Database Driver Class Initialized
+INFO - 2026-06-28 13:05:50 --> Database Driver Class Initialized
+INFO - 2026-06-28 13:05:50 --> Email Class Initialized
+DEBUG - 2026-06-28 13:05:50 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+ERROR - 2026-06-28 13:05:50 --> Severity: Warning --> mkdir(): Invalid path /home/darahbiru/Projects/MANTRA-Persandian/system/libraries/Session/drivers/Session_files_driver.php 136
+ERROR - 2026-06-28 13:05:50 --> Session: Configured save path '' is not a directory, doesn't exist or cannot be created.
+ERROR - 2026-06-28 13:05:50 --> Severity: Warning --> session_start(): Failed to initialize storage module: user (path: ) /home/darahbiru/Projects/MANTRA-Persandian/system/libraries/Session/Session.php 143
+INFO - 2026-06-28 13:05:50 --> Session: Class initialized using 'files' driver.
+INFO - 2026-06-28 13:05:50 --> Helper loaded: form_helper
+INFO - 2026-06-28 13:05:50 --> Form Validation Class Initialized
+INFO - 2026-06-28 13:05:50 --> Controller Class Initialized
+DEBUG - 2026-06-28 13:05:50 --> Form_validation class already loaded. Second attempt ignored.
+INFO - 2026-06-28 13:05:50 --> File loaded: /home/darahbiru/Projects/MANTRA-Persandian/application/views/templates/auth_header.php
+INFO - 2026-06-28 13:05:50 --> File loaded: /home/darahbiru/Projects/MANTRA-Persandian/application/views/auth/register.php
+INFO - 2026-06-28 13:05:50 --> File loaded: /home/darahbiru/Projects/MANTRA-Persandian/application/views/templates/auth_footer.php
+INFO - 2026-06-28 13:05:50 --> Final output sent to browser
+DEBUG - 2026-06-28 13:05:50 --> Total execution time: 0.0149
+INFO - 2026-06-28 13:05:50 --> Config Class Initialized
+INFO - 2026-06-28 13:05:50 --> Hooks Class Initialized
+DEBUG - 2026-06-28 13:05:50 --> UTF-8 Support Enabled
+INFO - 2026-06-28 13:05:50 --> Utf8 Class Initialized
+INFO - 2026-06-28 13:05:50 --> URI Class Initialized
+INFO - 2026-06-28 13:05:50 --> Router Class Initialized
+INFO - 2026-06-28 13:05:50 --> Output Class Initialized
+INFO - 2026-06-28 13:05:50 --> Security Class Initialized
+DEBUG - 2026-06-28 13:05:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2026-06-28 13:05:50 --> Input Class Initialized
+INFO - 2026-06-28 13:05:50 --> Language Class Initialized
+ERROR - 2026-06-28 13:05:50 --> 404 Page Not Found: Assets/vendor

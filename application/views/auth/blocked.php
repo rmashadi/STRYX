@@ -26,7 +26,7 @@
                 <div style="font-size: 5rem; font-weight: 700; color: #ff3333; line-height: 1; letter-spacing: -2px;">403</div>
                 <div style="font-size: 1.1rem; color: #e2e8f0; margin-top: 8px;">ACCESS DENIED</div>
                 <div style="color: #64748b; font-size: 0.8rem; margin-top: 12px;">
-                    <span style="color: #ff3333;">root@mantra</span>:<span style="color: #e2e8f0;">~</span>$ <span style="color: #94a3b8;">cat /var/log/auth.log</span><br>
+                    <span style="color: #ff3333;">root@stryx</span>:<span style="color: #e2e8f0;">~</span>$ <span style="color: #94a3b8;">cat /var/log/auth.log</span><br>
                     <span style="color: #ff3333;">[ERR]</span> Permission denied — insufficient privileges
                 </div>
                 <hr style="border-color: #2a3040; margin: 16px 0;">
