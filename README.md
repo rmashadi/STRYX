@@ -55,4 +55,4 @@ Threat Response &amp; Yber Assessment — Security Operations Platform.
 
 ---
 
-STRYX &mdash; Threat Response &amp; Yber Assessment
+STRYX &mdash; Threat Response &amp; Cyber Assessment

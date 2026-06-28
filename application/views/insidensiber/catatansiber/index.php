@@ -26,7 +26,7 @@
                                     <th>Tanggal Insiden</th>
                                     <th>Deskripsi</th>
                                     <th>Domain</th>
-                                    <th>SKPD</th>
+                                    <th>Instansi</th>
                                     <th>Analisis Penyebab</th>
                                     <th>Dampak Insiden</th>
                                     <th>Upload Bukti</th>

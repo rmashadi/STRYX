@@ -3451,3 +3451,62 @@ DEBUG - 2026-06-28 13:05:50 --> Global POST, GET and COOKIE data sanitized
 INFO - 2026-06-28 13:05:50 --> Input Class Initialized
 INFO - 2026-06-28 13:05:50 --> Language Class Initialized
 ERROR - 2026-06-28 13:05:50 --> 404 Page Not Found: Assets/vendor
+INFO - 2026-06-28 13:07:54 --> Config Class Initialized
+INFO - 2026-06-28 13:07:54 --> Hooks Class Initialized
+DEBUG - 2026-06-28 13:07:54 --> UTF-8 Support Enabled
+INFO - 2026-06-28 13:07:54 --> Utf8 Class Initialized
+INFO - 2026-06-28 13:07:54 --> URI Class Initialized
+INFO - 2026-06-28 13:07:54 --> Router Class Initialized
+INFO - 2026-06-28 13:07:54 --> Output Class Initialized
+INFO - 2026-06-28 13:07:54 --> Security Class Initialized
+DEBUG - 2026-06-28 13:07:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2026-06-28 13:07:54 --> Input Class Initialized
+INFO - 2026-06-28 13:07:54 --> Language Class Initialized
+ERROR - 2026-06-28 13:07:54 --> 404 Page Not Found: Upload/index
+INFO - 2026-06-28 13:07:56 --> Config Class Initialized
+INFO - 2026-06-28 13:07:56 --> Hooks Class Initialized
+DEBUG - 2026-06-28 13:07:56 --> UTF-8 Support Enabled
+INFO - 2026-06-28 13:07:56 --> Utf8 Class Initialized
+INFO - 2026-06-28 13:07:56 --> URI Class Initialized
+DEBUG - 2026-06-28 13:07:56 --> No URI present. Default controller set.
+INFO - 2026-06-28 13:07:56 --> Router Class Initialized
+INFO - 2026-06-28 13:07:56 --> Output Class Initialized
+INFO - 2026-06-28 13:07:56 --> Security Class Initialized
+DEBUG - 2026-06-28 13:07:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2026-06-28 13:07:56 --> Input Class Initialized
+INFO - 2026-06-28 13:07:56 --> Language Class Initialized
+INFO - 2026-06-28 13:07:56 --> Loader Class Initialized
+INFO - 2026-06-28 13:07:56 --> Helper loaded: url_helper
+INFO - 2026-06-28 13:07:56 --> Helper loaded: file_helper
+INFO - 2026-06-28 13:07:56 --> Helper loaded: security_helper
+INFO - 2026-06-28 13:07:56 --> Helper loaded: check_login_helper
+INFO - 2026-06-28 13:07:56 --> Helper loaded: filter_helper
+INFO - 2026-06-28 13:07:56 --> Database Driver Class Initialized
+INFO - 2026-06-28 13:07:56 --> Database Driver Class Initialized
+INFO - 2026-06-28 13:07:56 --> Email Class Initialized
+DEBUG - 2026-06-28 13:07:56 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+ERROR - 2026-06-28 13:07:56 --> Severity: Warning --> mkdir(): Invalid path /home/darahbiru/Projects/MANTRA-Persandian/system/libraries/Session/drivers/Session_files_driver.php 136
+ERROR - 2026-06-28 13:07:56 --> Session: Configured save path '' is not a directory, doesn't exist or cannot be created.
+ERROR - 2026-06-28 13:07:56 --> Severity: Warning --> session_start(): Failed to initialize storage module: user (path: ) /home/darahbiru/Projects/MANTRA-Persandian/system/libraries/Session/Session.php 143
+INFO - 2026-06-28 13:07:56 --> Session: Class initialized using 'files' driver.
+INFO - 2026-06-28 13:07:56 --> Helper loaded: form_helper
+INFO - 2026-06-28 13:07:56 --> Form Validation Class Initialized
+INFO - 2026-06-28 13:07:56 --> Controller Class Initialized
+DEBUG - 2026-06-28 13:07:56 --> Form_validation class already loaded. Second attempt ignored.
+INFO - 2026-06-28 13:07:56 --> File loaded: /home/darahbiru/Projects/MANTRA-Persandian/application/views/templates/auth_header.php
+INFO - 2026-06-28 13:07:56 --> File loaded: /home/darahbiru/Projects/MANTRA-Persandian/application/views/auth/login.php
+INFO - 2026-06-28 13:07:56 --> File loaded: /home/darahbiru/Projects/MANTRA-Persandian/application/views/templates/auth_footer.php
+INFO - 2026-06-28 13:07:56 --> Final output sent to browser
+DEBUG - 2026-06-28 13:07:56 --> Total execution time: 0.0026
+INFO - 2026-06-28 13:07:56 --> Config Class Initialized
+INFO - 2026-06-28 13:07:56 --> Hooks Class Initialized
+DEBUG - 2026-06-28 13:07:56 --> UTF-8 Support Enabled
+INFO - 2026-06-28 13:07:56 --> Utf8 Class Initialized
+INFO - 2026-06-28 13:07:56 --> URI Class Initialized
+INFO - 2026-06-28 13:07:56 --> Router Class Initialized
+INFO - 2026-06-28 13:07:56 --> Output Class Initialized
+INFO - 2026-06-28 13:07:56 --> Security Class Initialized
+DEBUG - 2026-06-28 13:07:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2026-06-28 13:07:56 --> Input Class Initialized
+INFO - 2026-06-28 13:07:56 --> Language Class Initialized
+ERROR - 2026-06-28 13:07:56 --> 404 Page Not Found: Assets/vendor

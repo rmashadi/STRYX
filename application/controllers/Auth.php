@@ -153,7 +153,7 @@ class Auth extends CI_Controller
             ]);
         }
 
-        $this->form_validation->set_rules('username', 'NIP/Username', 'trim|required|is_unique[user.username]');
+        $this->form_validation->set_rules('username', 'Username', 'trim|required|is_unique[user.username]');
         $this->form_validation->set_rules('name', 'Full Name', 'trim|required');
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|is_unique[user.email]');
         $this->form_validation->set_rules('_challenge', 'Security challenge', 'callback_verify_challenge');

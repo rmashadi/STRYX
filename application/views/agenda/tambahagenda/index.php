@@ -61,35 +61,22 @@
                                         <td><?= $tampil['menghadiri']; ?></td>
                                         <td><?= $tampil['keterangan']; ?></td>
                                         <td><?php
-                                        if ($tampil['penerima'] == '01') {
-                                            echo "Sekretariat Daerah";
-                                        } elseif ($tampil['penerima'] == '01.02') {
-                                            echo "Asisten Pemerintahan dan Kesejahteraan Rakyat";
-                                        } elseif ($tampil['penerima'] == '01.03') {
-                                            echo "Asisten Perekonomian dan Pembangunan";
-                                        } elseif ($tampil['penerima'] == '01.04') {
-                                            echo "Asisten Administrasi Umum";
-                                        } elseif ($tampil['penerima'] == '01.05') {
-                                            echo "Bagian Pemerintahan Sekretariat Daerah";
-                                        } elseif ($tampil['penerima'] == '01.06') {
-                                            echo "Bagian Kesejahteraan Rakyat Sekretariat Daerah";
-                                        } elseif ($tampil['penerima'] == '01.07') {
-                                            echo "Bagian Hukum Sekretariat Daerah";
-                                        } elseif ($tampil['penerima'] == '01.11') {
-                                            echo "Bagian Organisasi Sekretariat Daerah";
-                                        } elseif ($tampil['penerima'] == '01.12') {
-                                            echo "Bagian Umum Sekretariat Daerah";
-                                        } elseif ($tampil['penerima'] == '01.14') {
-                                            echo "Bagian Perekonomian Sekretariat Daerah";
-                                        } elseif ($tampil['penerima'] == '01.15') {
-                                            echo "Bagian Pembangunan Sekretariat Daerah";
-                                        } elseif ($tampil['penerima'] == '01.16') {
-                                            echo "Bagian Layanan Pengadaan Sekretariat Daerah";
-                                        } elseif ($tampil['penerima'] == '01.17') {
-                                            echo "Bagian Hubungan Masyarakat dan Protokol Sekretariat Daerah";
-                                        } else {
-                                            echo "Kode tidak ditemukan";
-                                        }?></td>
+                                        $dept_map = [
+                                            '01'    => 'Direktorat Utama',
+                                            '01.02' => 'Divisi Tata Kelola',
+                                            '01.03' => 'Divisi Ekonomi & Pembangunan',
+                                            '01.04' => 'Divisi Administrasi Umum',
+                                            '01.05' => 'Biro Tata Kelola',
+                                            '01.06' => 'Biro Kesejahteraan',
+                                            '01.07' => 'Biro Hukum',
+                                            '01.11' => 'Biro Organisasi',
+                                            '01.12' => 'Biro Umum',
+                                            '01.14' => 'Biro Perekonomian',
+                                            '01.15' => 'Biro Pembangunan',
+                                            '01.16' => 'Biro Layanan Pengadaan',
+                                            '01.17' => 'Biro Humas & Protokol'
+                                        ];
+                                        echo $dept_map[$tampil['penerima']] ?? 'Unit tidak dikenal';?></td>
                                         <!-- <td><?= $tampil['user_input']; ?></td> -->
                                         <td>
                                             <div class="btn-group shadow">
@@ -145,23 +132,23 @@
                         <div class="col-sm-9"><textarea name="keterangan" class="form-control" placeholder="Masukkan Keterangan"></textarea></div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Instansi / OPD</label>
+                        <label class="col-sm-3 col-form-label">Unit Penerima</label>
                         <div class="col-sm-9">
                             <select name="penerima" class="form-control">
-                                <option value="">-- Pilih Bagian / OPD --</option>
-                                <option value="01">Sekretariat Daerah</option>
-                                <option value="01.02">Asisten Pemerintahan dan Kesejahteraan Rakyat</option>
-                                <option value="01.03">Asisten Perekonomian dan Pembangunan</option>
-                                <option value="01.04">Asisten Administrasi Umum</option>
-                                <option value="01.05">Bagian Pemerintahan Sekretariat Daerah</option>
-                                <option value="01.06">Bagian Kesejahteraan Rakyat Sekretariat Daerah</option>
-                                <option value="01.07">Bagian Hukum Sekretariat Daerah</option>
-                                <option value="01.11">Bagian Organisasi Sekretariat Daerah</option>
-                                <option value="01.12">Bagian Umum Sekretariat Daerah</option>
-                                <option value="01.14">Bagian Perekonomian Sekretariat Daerah</option>
-                                <option value="01.15">Bagian Pembangunan Sekretariat Daerah</option>
-                                <option value="01.16">Bagian Layanan Pengadaan Sekretariat Daerah</option>
-                                <option value="01.17">Bagian Hubungan Masyarakat dan Protokol Sekretariat Daerah</option>
+                                <option value="">-- Pilih Unit --</option>
+                                <option value="01">Direktorat Utama</option>
+                                <option value="01.02">Divisi Tata Kelola</option>
+                                <option value="01.03">Divisi Ekonomi &amp; Pembangunan</option>
+                                <option value="01.04">Divisi Administrasi Umum</option>
+                                <option value="01.05">Biro Tata Kelola</option>
+                                <option value="01.06">Biro Kesejahteraan</option>
+                                <option value="01.07">Biro Hukum</option>
+                                <option value="01.11">Biro Organisasi</option>
+                                <option value="01.12">Biro Umum</option>
+                                <option value="01.14">Biro Perekonomian</option>
+                                <option value="01.15">Biro Pembangunan</option>
+                                <option value="01.16">Biro Layanan Pengadaan</option>
+                                <option value="01.17">Biro Humas &amp; Protokol</option>
                             </select>
                         </div>
                     </div>

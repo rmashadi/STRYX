@@ -179,7 +179,7 @@ function tanggal_indo($tanggal) {
 
 
 <div class="container mt-4">
-    <h3 class="text-center"><strong>DAFTAR INFORMASI SURAT SEKRETARIAT</strong></h3>
+    <h3 class="text-center"><strong>DAFTAR INFORMASI SURAT</strong></h3>
     <h5 class="text-center">Masukkan data pencarian :</h5>
     <br>
     <div class="container text-center">

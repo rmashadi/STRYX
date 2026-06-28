@@ -12,7 +12,7 @@
                             <thead>
                                 <tr align="center">
                                     <th>#.</th>
-                                    <th>Nama SKPD</th>
+                                    <th>Nama Instansi</th>
                                     <th>Nama Aplikasi</th>
                                     <th>Alamat URL DEV</th>
                                     <th>Alamat URL Publish</th>
@@ -96,8 +96,8 @@
                         <div class="col-sm-9">
                             <select name="id_instansi" class="form-control">
                                 <option value="">-- Pilih Instansi --</option>
-                                <?php foreach ($instansi as $skpd) : ?>
-                                    <option value="<?= $skpd['id_instansi']; ?>"><?= $skpd['instansi']; ?></option>
+                                <?php foreach ($instansi as $ins) : ?>
+                                    <option value="<?= $ins['id_instansi']; ?>"><?= $ins['instansi']; ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
