@@ -1,42 +1,58 @@
-<h1>INFO</h1>
+# STRYX
 
-Role management codeigniter 3 using php, and javascript role management is made to make it easier for developers to create websites to provide access to each menu
+**S**ystem for **T**hreat **R**esponse & **Y**ber Assessment Management
 
-<h1>GUIDE!</h1>
+Management Information Technology Security Assessment — Tatakelola Layanan ITSA dan Insiden Siber di Pemerintah Daerah Kabupaten Sleman.
 
-how to use ?
-- clone or download 
-- import database into the phpmyadmin 
-- open config folder in <code>application/config/config.php</code>
-  
-  <pre>
-    <code>
-      $config['base_url'] = 'http://localhost/role-management'; //enter the name of the folder your are using  
-    </code>
-    
- - database configuration in folder <code>application/config/database.php</code>
- - open the <code>database.php</code> then enter the name according to the database that you imported earlier
-   <pre>
-      <code>
-          $db['default'] = array(
-            'dsn'	=> '',
-            'hostname' => 'localhost',
-            'username' => 'root',
-            'password' => '',                 <= enter your database password if any
-            'database' => 'role-management',  <= enter your database name if any
-            'dbdriver' => 'mysqli',
-            'dbprefix' => '',
-            'pconnect' => FALSE,
-            'db_debug' => (ENVIRONMENT !== 'production'),
-            'cache_on' => FALSE,
-            'cachedir' => '',
-            'char_set' => 'utf8',
-            'dbcollat' => 'utf8_general_ci',
-            'swap_pre' => '',
-            'encrypt' => FALSE,
-            'compress' => FALSE,
-            'stricton' => FALSE,
-            'failover' => array(),
-            'save_queries' => TRUE
-          );
-      </code>
+---
+
+## Tech Stack
+
+- **Framework:** CodeIgniter 3
+- **Theme:** STRYX Dark — custom security engineer aesthetic
+- **PHP:** 7.x+
+- **Database:** MySQL/MariaDB
+- **Icons:** Font Awesome 5
+
+## Setup
+
+### Requirements
+
+- PHP 7.x or higher
+- MySQL 5.7 or higher
+- Web server (Apache/Nginx) with `mod_rewrite`
+
+### Installation
+
+1. Clone repository:
+   ```bash
+   git clone git@github.com:rmashadi/STRYX.git
+   ```
+
+2. Create database and import schema
+
+3. Configure database connection in `application/config/database.php`:
+   ```php
+   $db['default'] = array(
+       'dsn'       => '',
+       'hostname'  => 'localhost',
+       'username'  => 'root',
+       'password'  => '',         // your database password
+       'database'  => 'stryx_db', // your database name
+       'dbdriver'  => 'mysqli',
+       // ...
+   );
+   ```
+
+4. Set base URL in `application/config/config.php`:
+   ```php
+   $config['base_url'] = 'http://localhost/stryx';
+   ```
+
+5. Ensure `uploads/` directory is writable
+
+6. Access via browser and login
+
+---
+
+Pemerintah Kabupaten Sleman &copy; <?= date('Y') ?>
