@@ -2,6 +2,16 @@
 
 class Tambahagenda_model extends CI_Model
 {
+    private $api_base;
+    private $api_auth;
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->api_base = $this->config->item('agenda_api_url');
+        $this->api_auth = $this->config->item('agenda_api_token');
+    }
+
     public function users()
     {
         return $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
@@ -9,14 +19,10 @@ class Tambahagenda_model extends CI_Model
 
     public function getAll()
     {
-        // return $this->db->get('tb_kondisi')->result_array();
-        // $result = $this->db->get('tb_kondisi')->result_array();
-        // print_r($result); exit;
-
         $thisday = date("Y-m-d");
         $curl = curl_init();
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://interop.slemankab.go.id/api/xrp49?tanggal=$thisday",
+            CURLOPT_URL => $this->api_base . "/xrp49?tanggal=$thisday",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
@@ -24,28 +30,25 @@ class Tambahagenda_model extends CI_Model
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => "GET",
             CURLOPT_HTTPHEADER => array(
-                "Authorization: Basic YzBxY2xtM2Y6ZGZ1N2xDamw1UjkzZGhQbDhOOUxTZXpoRFFiY0NzNWo="
+                "Authorization: Basic " . $this->api_auth
             ),
         ));
 
         $response = curl_exec($curl);
         $err = curl_error($curl);
 
-        // print_r($response); exit();
-
         curl_close($curl);
-        $result = json_decode($response, true); 
+        $result = json_decode($response, true);
         $resultArray = $result['result'];
         return $resultArray;
     }
 
     public function getFiltered($tanggal)
     {
-
         $thisday = $tanggal;
         $curl = curl_init();
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://interop.slemankab.go.id/api/xrp49?tanggal=$thisday",
+            CURLOPT_URL => $this->api_base . "/xrp49?tanggal=$thisday",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
@@ -53,7 +56,7 @@ class Tambahagenda_model extends CI_Model
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => "GET",
             CURLOPT_HTTPHEADER => array(
-                "Authorization: Basic YzBxY2xtM2Y6ZGZ1N2xDamw1UjkzZGhQbDhOOUxTZXpoRFFiY0NzNWo="
+                "Authorization: Basic " . $this->api_auth
             ),
         ));
 
@@ -61,13 +64,13 @@ class Tambahagenda_model extends CI_Model
         $err = curl_error($curl);
 
         curl_close($curl);
-        $result = json_decode($response, true); 
+        $result = json_decode($response, true);
         $resultArray = $result['result'];
         return $resultArray;
     }
 
     public function AddData()
-    {        
+    {
         $acara          = htmlspecialchars($this->input->post('acara', true));
         $tanggal        = htmlspecialchars($this->input->post('tanggal', true));
         $jam_mulai      = htmlspecialchars($this->input->post('jam_mulai', true));
@@ -75,12 +78,12 @@ class Tambahagenda_model extends CI_Model
         $pelaksana      = htmlspecialchars($this->input->post('pelaksana', true));
         $menghadiri     = htmlspecialchars($this->input->post('menghadiri', true));
         $keterangan     = htmlspecialchars($this->input->post('keterangan', true));
-        $user_input     = "dari_satsetslemaset";
+        $user_input     = "stryx";
         $penerima       = htmlspecialchars($this->input->post('penerima', true));
 
         $curl = curl_init();
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://interop.slemankab.go.id/api/xqzb6",
+            CURLOPT_URL => $this->api_base . "/xqzb6",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
@@ -89,7 +92,7 @@ class Tambahagenda_model extends CI_Model
             CURLOPT_CUSTOMREQUEST => "POST",
             CURLOPT_POSTFIELDS => "acara=$acara&tanggal=$tanggal&jam_mulai=$jam_mulai&tempat=$tempat&pelaksana=$pelaksana&menghadiri=$menghadiri&keterangan=$keterangan&user_input=$user_input&user_update=$user_input&penerima=$penerima",
             CURLOPT_HTTPHEADER => array(
-                "Authorization: Basic YzBxY2xtM2Y6ZGZ1N2xDamw1UjkzZGhQbDhOOUxTZXpoRFFiY0NzNWo=",
+                "Authorization: Basic " . $this->api_auth,
                 "content-type: application/x-www-form-urlencoded"
             ),
         ));
@@ -97,29 +100,21 @@ class Tambahagenda_model extends CI_Model
         $response = curl_exec($curl);
         $err = curl_error($curl);
 
-        // print_r($response); exit();
-
         curl_close($curl);
 
-        // Cek apakah terjadi error pada cURL
         if ($err) {
-                // echo json_encode(['status' => 'error', 'message' => 'cURL Error: ' . $err]);
-                return $err;
+            return $err;
         } else {
             $responseData = json_decode($response, true);
 
-            // Cek apakah respons valid dan sukses
             if ($responseData && isset($responseData['status']) && $responseData['status'] == 'success') {
-                // echo json_encode(['status' => 'success', 'message' => 'Data berhasil disimpan!']);
                 $msg = "Data berhasil disimpan";
                 return $msg;
             } else {
-                // echo json_encode(['status' => 'error', 'message' => 'Gagal menyimpan data.']);
                 $msg = "Gagal menyimpan data";
                 return $msg;
             }
         }
-
     }
 
     public function EditData()

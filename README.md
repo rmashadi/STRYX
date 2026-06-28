@@ -2,7 +2,7 @@
 
 **S**ystem for **T**hreat **R**esponse & **Y**ber Assessment Management
 
-Management Information Technology Security Assessment — Tatakelola Layanan ITSA dan Insiden Siber di Pemerintah Daerah Kabupaten Sleman.
+Threat Response &amp; Yber Assessment — Security Operations Platform.
 
 ---
 

@@ -60,7 +60,7 @@
       </div>
     </div>
     <h4 class="font-mono" style="color: #e2e8f0;">Management Information Technology Security Assessment</h4>
-    <p style="color: #64748b; font-size: 0.85rem;">Tatakelola Layanan ITSA dan Insiden Siber<br>Pemerintah Daerah Kabupaten Sleman</p>
+    <p style="color: #64748b; font-size: 0.85rem;">Threat Response &amp; Yber Assessment Management</p>
   </div>
   <hr>
   <div class="row">

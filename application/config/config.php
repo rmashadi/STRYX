@@ -523,3 +523,18 @@ $config['rewrite_short_tags'] = TRUE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+/*
+|--------------------------------------------------------------------------
+| External API Configuration
+|--------------------------------------------------------------------------
+|
+| Agenda integration API endpoint and authentication token.
+| Surat/document integration API endpoint and authentication token.
+| Update these values to point to your own API services.
+|
+*/
+$config['agenda_api_url'] = '';
+$config['agenda_api_token'] = '';
+$config['surat_api_url'] = '';
+$config['surat_api_token'] = '';

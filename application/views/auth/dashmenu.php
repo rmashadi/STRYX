@@ -52,9 +52,8 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
             <div>
               <h1 class="logo-name"></h1>
               <br><br>
-              <img alt="image" src="<?= base_url('assets/img/profile/logo-sleman.png') ?>" />
-              <h2><b>Sistem Terpadu</b></h2>
-              <h3>Sekretariat Daerah Kabupaten Sleman</h3>
+              <h2><b>STRYX</b></h2>
+              <h3>Threat Response &amp; Yber Assessment</h3>
             </div>
             <br><br>
 
@@ -69,8 +68,8 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
                           <center><i class="fa fa-building" style="color:#16A085"></i></center>
                         </div>
                         <div class="wrimagecard-topimage_title text-center">
-                          <h4>SAT SET SLEMASSET</h4>
-                          <p>Sistem Pengelolaan Aset Sleman yang Efektif dan Transparan</p>
+                          <h4>ASET</h4>
+                          <p>Sistem Pengelolaan Aset yang Efektif dan Transparan</p>
                         </div>
                       </a>
                     </div>
@@ -88,8 +87,8 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
                           <center><i class="fa fa-envelope" style="color:#fabc09"></i></center>
                         </div>
                         <div class="wrimagecard-topimage_title text-center">
-                          <h4>SURAT SEKRETARIAT</h4>
-                          <p>Pencarian Surat Sekretariat Daerah Kabupaten Sleman</p>
+                          <h4>SURAT</h4>
+                          <p>Pencarian Surat dan Dokumen</p>
                         </div>
                       </a>
                     </div>
@@ -107,8 +106,8 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
                           <center><i class="fa fa-table" style="color:#3369e8"></i></center>
                         </div>
                         <div class="wrimagecard-topimage_title text-center">
-                          <h4>AGENDA PIMPINAN</h4>
-                          <p>Daftar Agenda Pimpinan Kabupaten Sleman</p>
+                          <h4>AGENDA</h4>
+                          <p>Daftar Agenda dan Kegiatan</p>
                         </div>
                       </a>
                     </div>

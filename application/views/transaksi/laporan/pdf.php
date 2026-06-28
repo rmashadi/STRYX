@@ -1,21 +1,11 @@
 
-<div style="text-align: center; border-bottom: 2px solid black; margin-bottom: 20px; padding-bottom: 10px;">
-    <div style="display: flex; align-items: center; justify-content: center;">
-        <!-- Logo -->
-        <!-- <div style="flex: 0 0 auto; margin-right: 15px;">
-            <img alt="image" src="<?= base_url('assets/img/profile/logo-sleman.png') ?>"  style="width: 70px; height: auto;">
-        </div> -->
-        <!-- Teks Header -->
-        <div style="flex: 1; text-align: center;">
-            <h4 style="margin: 0;">PEMERINTAH KABUPATEN SLEMAN</h4>
-            <h3 style="margin: 0; font-weight: bold;">SEKRETARIAT DAERAH</h3>
-            <p style="margin: 0; font-family: 'Javanese Text'; font-size: 18px;">ꦥꦼꦩꦺꦂꦤꦶꦠ꧀ꦲꦏꦧꦸꦥꦠꦺꦤ꧀ꦱ꧀ꦭꦺꦩꦤ꧀</p>
-            <p style="margin: 5px 0 0 0; font-size: 12px;">
-                Jalan Parasamya, Beran, Tridadi, Sleman, Yogyakarta, 55511<br>
-                Telepon (0274) 868405, Faksimile (0274) 868494<br>
-                Laman: setda.slemankab.go.id, Surel: setda@slemankab.go.id
-            </p>
-        </div>
+<div style="text-align: center; border-bottom: 2px solid #1a1a2e; margin-bottom: 20px; padding-bottom: 10px;">
+    <div style="text-align: center;">
+        <h3 style="margin: 0; font-weight: bold; color: #1a1a2e;">STRYX</h3>
+        <h4 style="margin: 4px 0; color: #333;">Threat Response &amp; Yber Assessment</h4>
+        <p style="margin: 5px 0 0 0; font-size: 11px; color: #666;">
+            Laporan Peminjaman Aset
+        </p>
     </div>
 </div>
 
