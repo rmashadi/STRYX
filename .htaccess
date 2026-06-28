@@ -1,0 +1,27 @@
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php/$1 [L]
+
+Options +FollowSymlinks -Indexes
+RewriteEngine on
+
+DirectoryIndex index.php
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+
+# Blokir akses ke file .DS_Store
+<Files ".DS_Store">
+    Require all denied
+</Files>
+
+# Blokir akses ke file composer.json
+<Files "composer.json">
+    Require all denied
+</Files>
+
+php_flag display_errors Off
+php_value error_reporting 0
+

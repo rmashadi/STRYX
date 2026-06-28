@@ -1,0 +1,22 @@
+# User uploaded content
+uploads/
+
+# Error logs
+ip_error.log
+*.log
+
+# Duplicate asset mirror
+assets/1/
+
+# macOS
+.DS_Store
+._*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
