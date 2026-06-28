@@ -55,4 +55,4 @@ Management Information Technology Security Assessment — Tatakelola Layanan ITS
 
 ---
 
-Pemerintah Kabupaten Sleman &copy; <?= date('Y') ?>
+STRYX &mdash; Threat Response &amp; Yber Assessment

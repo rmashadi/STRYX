@@ -121,7 +121,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
           <hr />
           <div class="row">
             <div class="col-md-12 text-right">
-              <small>Pemerintah Kabupaten Sleman © <?= date('Y') ?></small>
+              <small>STRYX &copy; <?= date('Y') ?></small>
             </div>
           </div>
   </div>

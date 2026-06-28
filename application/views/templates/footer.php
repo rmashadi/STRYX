@@ -3,7 +3,7 @@
         Version <strong>1.0</strong>
     </div>
     <div>
-        <strong>Copyright</strong> Dinas Komunikasi dan Informatika Kabupaten Sleman &copy; <?= date('Y'); ?>
+        <strong>STRYX</strong> &mdash; Threat Response &amp; Assessment &copy; <?= date('Y'); ?>
     </div>
 </div>
 </div>

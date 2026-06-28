@@ -96,8 +96,7 @@
   <hr />
   <div class="row">
     <div class="col-md-12" style="color: #64748b; font-size: 0.8rem;">
-      <small>Pemerintah Kabupaten Sleman &copy; <?= date('Y') ?></small>
-      <br><small class="font-mono">v1.0 &middot; Secure Channel</small>
+      <small class="font-mono">v1.0 &middot; Secure Channel</small>
     </div>
   </div>
 </div>

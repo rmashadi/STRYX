@@ -118,8 +118,7 @@
     <p style="color: #94a3b8;">Sudah punya akun? <a href="<?= base_url('auth'); ?>" style="color: #00d4ff;">Masuk</a></p>
   <hr />
   <div style="color: #64748b; font-size: 0.8rem;">
-    <small>Pemerintah Kabupaten Sleman &copy; <?= date('Y') ?></small>
-    <br><small class="font-mono">v1.0 &middot; Secure Registration</small>
+    <small class="font-mono">v1.0 &middot; Secure Registration</small>
   </div>
 </div>
 
