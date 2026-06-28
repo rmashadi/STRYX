@@ -12,6 +12,7 @@
     <link href="<?= base_url('assets/'); ?>font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="<?= base_url('assets/'); ?>css/animate.css" rel="stylesheet">
     <link href="<?= base_url('assets/'); ?>css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="<?= base_url('assets/img/favicon.png') ?>">
     <link href="<?= base_url('assets/'); ?>css/security-theme.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 

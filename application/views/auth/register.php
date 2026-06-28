@@ -1,36 +1,4 @@
-<?php
-  // Generate dua angka random
-  $num1 = rand(1, 10);
-  $num2 = rand(1, 10);
-  $this->session->set_userdata('captcha_answer', $num1 + $num2); // Simpan hasil ke session
-?>
-
 <style>
-  .captcha-box {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-      font-weight: bold;
-      border: 1px solid #2a3040;
-      padding: 10px;
-      border-radius: 5px;
-      background: #141923;
-  }
-
-  .captcha-box span {
-      margin: 0 5px;
-  }
-
-  .captcha-answer {
-      width: 100px;
-      text-align: center;
-      margin-left: 10px;
-      padding: 5px;
-      font-size: 1rem;
-  }
-
   .middle-box {
     padding-top: 2px !important;
     color: #e2e8f0;
@@ -48,6 +16,16 @@
   .shadow {
       box-shadow: 0 2px 16px rgba(0, 0, 0, 0.45) !important;
   }
+
+  ._honey {
+      position: absolute;
+      left: -9999px;
+      top: -9999px;
+      opacity: 0;
+      height: 0;
+      width: 0;
+      z-index: -1;
+  }
 </style>
 
 
@@ -63,6 +41,13 @@
   <hr>
   <div class="ibox-content shadow">
     <form class="m-t" role="form" action="<?= base_url('auth/register'); ?>" method="POST">
+
+      <!-- Silent security challenge -->
+      <input type="hidden" name="_challenge" value="<?= $challenge ?? ''; ?>">
+      <div class="_honey">
+        <input type="text" name="_contact" tabindex="-1" autocomplete="off">
+      </div>
+
       <?php echo validation_errors('<strong><div class="alert alert-danger shadow" role="alert">', '</div></strong>'); ?>
 
       <div class="form-group">
@@ -93,13 +78,6 @@
       <div class="form-group position-relative">
         <input type="password" class="form-control shadow" name="password2" id="password2" placeholder="Repeat Password" >
         <i class="fa fa-eye-slash position-absolute" id="togglePassword2" style="top: 30%; right: 20px; cursor: pointer;"></i>
-      </div>
-
-      <div class="form-group">
-        <div class="captcha-box">
-          <img src="<?= base_url('auth/generate_captcha') ?>" alt="Captcha" />
-          <input type="text" class="captcha-answer form-control shadow" name="captcha" id="captcha">
-        </div>
       </div>
 
       <div class="form-group text-left">
